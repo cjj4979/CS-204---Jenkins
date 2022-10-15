@@ -40,6 +40,7 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
+        // recursion
         if (n==0)
             return 0;
         else if(n==1 || n==2)
@@ -68,6 +69,7 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
+        // append random to the original str
         String id = n + UUID.randomUUID().toString();
         return id;
     }
