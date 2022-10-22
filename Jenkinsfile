@@ -1,12 +1,8 @@
 pipeline {
     environment {
-
-            registry = "cjj4979/cs204-lab-6"
-
-            registryCredential = 'dockerhub'
-
-            dockerImage=''
-
+        registry = "cjj4979/cs204-lab-6"
+        registryCredential = 'dockerhub'
+        dockerImage=''
     }
     agent any
     tools {
@@ -75,7 +71,7 @@ pipeline {
     }
     post {
         failure{
-            mailto: 'jungjin4979@gmail.com',
+            mail to: 'jungjin4979@gmail.com',
             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
             body: "Something is wrong with ${env.BUILD_URL}"
         }
