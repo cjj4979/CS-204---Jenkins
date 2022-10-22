@@ -1,7 +1,7 @@
 import java.util.UUID;
 
 /****
- * Calculator class
+ * Calculator class for cs 204
  */
 class Calculator {
 
