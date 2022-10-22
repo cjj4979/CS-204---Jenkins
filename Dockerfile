@@ -1,6 +1,6 @@
-from openjdk
+FROM openjdk
 
-COPY ./src/main/java/*.java /
+ONBUILD COPY ./src/main/java/*.java /
 
 RUN javac /Calculator.java
 
