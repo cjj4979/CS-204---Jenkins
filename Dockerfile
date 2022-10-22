@@ -1,4 +1,4 @@
 FROM openjdk
-ONBUILD COPY ./src/main/java/*.java /
-RUN javac ./src/main/java/Calculator.java
+COPY ./src/main/java/*.java /
+RUN javac /Calculator.java
 ENTRYPOINT ["java"]
